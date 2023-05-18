@@ -16,7 +16,7 @@ soup = BeautifulSoup(response.content, "html.parser")
 
 title = soup.select('h1')[0].text  #Title of the page (in H1)
 print(title)
-
+print("\n")
 
 headings = []  
 
@@ -36,26 +36,28 @@ for para in soup.select('p'):
 print(headings[0])
 output0 = '\n'.join(para_content[5:7])
 print(output0)
+print()
 
 
 print(headings[1])
 output1 = '\n'.join(para_content[7:9])
 print(output1)
-
+print()
 
 print(headings[2])
 output2 = '\n'.join(para_content[9:13])
 print(output2)
-
+print()
     
 print(headings[3])
 output3 = (para_content[13])
 print(output3)
-
+print()
 
 print(headings[4])
 output4 = (para_content[14])
 print(output4)
+
 subheadings = []  
 
 for element in soup.select('h4'):
